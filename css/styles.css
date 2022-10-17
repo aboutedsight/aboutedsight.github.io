@@ -4036,6 +4036,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-weight: 700;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -7944,6 +7945,7 @@ textarea.form-control-lg {
 
 .rounded-pill {
   border-radius: 0.3rem !important;
+  font-weight: 700;
 }
 
 .rounded-top {
