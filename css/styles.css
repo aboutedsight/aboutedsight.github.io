@@ -62,6 +62,9 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --main-color: #FF6E86;
+  --teachers-color: #FFBA5B;
+  --facilitators-color: #604E6E;
 }
 
 *,
@@ -3030,14 +3033,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #FF6E86;
+  color: var(--main-color);
   background-color: #FFFFFF;
 }
 .teachers .btn-primary {
-  color: #FFBA5B;
+  color: var(--teachers-color);
 }
 .facilitators .btn-primary {
-  color: #604E6E;
+  color: var(--facilitators-color);;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11330,13 +11333,13 @@ section {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #FF6E86;
+  background-color: var(--main-color);
 }
 .teachers #mainNav {
-  background-color: #FFBA5B !important;
+  background-color: var(--teachers-color);
 }
 .facilitators #mainNav {
-  background-color: #604E6E !important;
+  background-color: var(--facilitators-color);
 }
 #mainNav .navbar-brand {
   font-family: Roboto, "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
