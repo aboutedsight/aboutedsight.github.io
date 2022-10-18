@@ -65,6 +65,7 @@
   --main-color: #FF6E86;
   --secondary-color: #FFBA5B;
   --tertiary-color: #604E6E;
+  --main-font: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 *,
@@ -7982,6 +7983,51 @@ textarea.form-control-lg {
 
 .invisible {
   visibility: hidden !important;
+}
+
+#what-edsight {
+  padding-top: 125px;
+  padding-bottom: 154px;
+}
+#what-edsight-title
+{
+  line-height: 59px;
+  font-family: var(--main-font);
+  font-size: 50px !important;
+  text-align: left;
+}
+#what-edsight-btn
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 79px;
+  padding: 6px 12px !important;
+  width: 256px;
+  height: 47px;
+
+  background-color: var(--tertiary-color);
+  color: var(--bs-white);
+}
+.what-edsight-desc:first-of-type {
+  margin-bottom: 33px !important;
+}
+.what-edsight-desc-img {
+  padding-left: 0;
+  padding-right: 120px;
+}
+.what-edsight-desc-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+}
+.what-edsight-desc-text-highlight {
+  color: var(--tertiary-color);
 }
 
 @media (min-width: 576px) {
