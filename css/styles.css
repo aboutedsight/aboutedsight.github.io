@@ -7502,6 +7502,11 @@ textarea.form-control-lg {
   padding-bottom: 3rem !important;
 }
 
+.py-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -11555,6 +11560,11 @@ footer a:hover, footer a:active, footer a:focus {
   justify-content: center;
   position: relative;
 }
+
+.hero-image{
+  max-width: 100%;
+}
+
 .masthead .masthead-device-mockup .circle {
   position: absolute;
   fill: url(#circleGradient);
