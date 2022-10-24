@@ -63,8 +63,9 @@
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
   --main-color: #FF6E86;
-  --teachers-color: #FFBA5B;
-  --facilitators-color: #604E6E;
+  --secondary-color: #FFBA5B;
+  --tertiary-color: #604E6E;
+  --main-font: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 *,
@@ -3037,10 +3038,10 @@ textarea.form-control-lg {
   background-color: #FFFFFF;
 }
 .teachers .btn-primary {
-  color: var(--teachers-color);
+  color: var(--secondary-color);
 }
 .facilitators .btn-primary {
-  color: var(--facilitators-color);;
+  color: var(--tertiary-color);
 }
 .btn-primary:hover {
   color: #fff;
@@ -7995,6 +7996,48 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+#what-edsight {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+.what-edsight-left {
+  margin-left: 0;
+}
+#what-edsight-title
+{
+  line-height: 59px;
+  font-family: var(--main-font);
+  font-size: 50px !important;
+}
+#what-edsight-btn
+{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  line-height: 1.5rem;
+
+  background-color: var(--tertiary-color);
+  color: var(--bs-white);
+}
+.what-edsight-desc:first-of-type {
+  margin-bottom: 33px !important;
+}
+.what-edsight-desc-img {
+  padding-left: 0;
+  display: flex;
+  justify-content: center !important;
+}
+.what-edsight-desc-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+.what-edsight-desc-text-highlight {
+  color: var(--tertiary-color);
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11317,7 +11360,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background-color: var(--secondary-color);
 }
 
 .font-alt {
@@ -11347,10 +11390,10 @@ section {
   background-color: var(--main-color);
 }
 .teachers #mainNav {
-  background-color: var(--teachers-color);
+  background-color: var(--secondary-color);
 }
 .facilitators #mainNav {
-  background-color: var(--facilitators-color);
+  background-color: var(--tertiary-color);
 }
 #mainNav .navbar-brand {
   font-family: Roboto, "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11621,6 +11664,15 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 12.5rem;
   }
+
+  .what-edsight-left {
+    margin: 0 auto;
+  }
+
+  .what-edsight-desc {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 768px) {
   .masthead .masthead-device-mockup .circle {
@@ -11652,5 +11704,9 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
+  }
+
+  .what-edsight-desc-img {
+    padding-right: 120px;
   }
 }
