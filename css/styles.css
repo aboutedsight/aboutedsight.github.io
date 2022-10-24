@@ -7998,26 +7998,24 @@ textarea.form-control-lg {
 
 #what-edsight {
   padding-top: 125px;
-  padding-bottom: 154px;
+  padding-bottom: 125px;
+}
+.what-edsight-left {
+  margin-left: 0;
 }
 #what-edsight-title
 {
   line-height: 59px;
   font-family: var(--main-font);
   font-size: 50px !important;
-  text-align: left;
 }
 #what-edsight-btn
 {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-
-  margin-top: 79px;
-  padding: 6px 12px !important;
-  width: 256px;
-  height: 47px;
+  align-items: center; */
+  line-height: 1.5rem;
 
   background-color: var(--tertiary-color);
   color: var(--bs-white);
@@ -8027,7 +8025,8 @@ textarea.form-control-lg {
 }
 .what-edsight-desc-img {
   padding-left: 0;
-  padding-right: 120px;
+  display: flex;
+  justify-content: center !important;
 }
 .what-edsight-desc-text {
   font-family: var(--main-font);
@@ -11665,6 +11664,15 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 12.5rem;
   }
+
+  .what-edsight-left {
+    margin: 0 auto;
+  }
+
+  .what-edsight-desc {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 768px) {
   .masthead .masthead-device-mockup .circle {
@@ -11696,5 +11704,9 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
+  }
+
+  .what-edsight-desc-img {
+    padding-right: 120px;
   }
 }
