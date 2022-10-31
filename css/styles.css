@@ -3432,15 +3432,15 @@ textarea.form-control-lg {
   color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:hover {
+.btn-outline-light:hover, .btn-outline-light:active {
   color: var(--main-color);
   background-color: #FFFFFF;
 }
-.teachers .btn-outline-light:hover {
+.teachers .btn-outline-light:hover, .teachers .btn-outline-light:active {
   color: var(--secondary-color);
   background-color: #FFFFFF;
 }
-.facilitators .btn-outline-light:hover {
+.facilitators .btn-outline-light:hover, .facilitators .btn-outline-light:active {
   color: var(--tertiary-color);
   background-color: #FFFFFF;
 }
