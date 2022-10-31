@@ -11361,7 +11361,8 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background-color: var(--secondary-color);
+  background-color: #8799EC;
+  background-image: linear-gradient(to right, #A46E9C , #8799EC);
 }
 
 .font-alt {
