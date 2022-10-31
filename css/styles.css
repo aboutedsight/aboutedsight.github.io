@@ -3433,15 +3433,22 @@ textarea.form-control-lg {
   border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: var(--main-color);
+  background-color: #FFFFFF;
 }
+.teachers .btn-outline-light:hover {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
+.facilitators .btn-outline-light:hover {
+  color: var(--tertiary-color);
+  background-color: #FFFFFF;
+}
+
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 .btn-check:checked + .btn-outline-light, .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
-  color: #000;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
@@ -3500,12 +3507,6 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
-}
-
-#edsight-learn-button{
-  background-color:#FFFFFF;
-  border-color: #FFFFFF;
-  color: var(--bs-primary);
 }
 
 .fade {
@@ -8011,15 +8012,16 @@ textarea.form-control-lg {
 }
 #what-edsight-btn
 {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
   line-height: 1.5rem;
-
-  background-color: var(--tertiary-color);
   color: var(--bs-white);
+  border-color: #f8f9fa;
 }
+#what-edsight-btn:hover {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
+
+
 .what-edsight-desc:first-of-type {
   margin-bottom: 33px !important;
 }
