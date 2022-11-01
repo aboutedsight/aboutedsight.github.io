@@ -5442,6 +5442,28 @@ textarea.form-control-lg {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+#built-designed-for {
+  background-color: var(--main-color);
+  color: #FFF;
+}
+#built-designed-for h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#built-designed-for p {
+  font-weight: 400;
+  font-size: 24px;
+}
+.builtDesignedDesc {
+  padding-right: 25px;
+}
+.builtDesignedRole {
+  background-color: #FFBA5B;
+  font-weight: 700;
+  /* display: inline-block; */
+}
+
+
 .toast {
   width: 350px;
   max-width: 100%;
