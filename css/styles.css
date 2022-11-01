@@ -11619,6 +11619,11 @@ footer a:hover, footer a:active, footer a:focus {
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
+.masthead-teacher{
+  background-color: #FFBA5B;
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
 .masthead .masthead-device-mockup {
   display: flex;
   align-items: center;
