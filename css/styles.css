@@ -11620,12 +11620,12 @@ footer a:hover, footer a:active, footer a:focus {
   padding-bottom: 5rem;
 }
 .masthead-teacher{
-  background-color: #FFBA5B;
+  background-color: var(--secondary-color);
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
 .masthead-facil{
-  background-color: #604E6E;
+  background-color: var(--tertiary-color);
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
