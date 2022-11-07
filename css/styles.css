@@ -8030,6 +8030,7 @@ textarea.form-control-lg {
 #what-edsight {
   padding-top: 125px;
   padding-bottom: 125px;
+  background-color: var(--secondary-color);
 }
 .what-edsight-left {
   margin-left: 0;
