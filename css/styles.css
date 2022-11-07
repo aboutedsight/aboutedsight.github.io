@@ -65,8 +65,6 @@
   --main-color: #FF6E86;
   --secondary-color: #FFBA5B;
   --tertiary-color: #604E6E;
-  --fourth-color: #A46E9C;
-  --fifth-color: #8799EC;
   --main-font: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -2209,7 +2207,6 @@ progress {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -3435,16 +3432,23 @@ textarea.form-control-lg {
   color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:hover {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+.btn-outline-light:hover, .btn-outline-light:active {
+  color: var(--main-color);
+  background-color: #FFFFFF;
 }
+.teachers .btn-outline-light:hover, .teachers .btn-outline-light:active {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
+.facilitators .btn-outline-light:hover, .facilitators .btn-outline-light:active {
+  color: var(--tertiary-color);
+  background-color: #FFFFFF;
+}
+
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 .btn-check:checked + .btn-outline-light, .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
-  color: #000;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
@@ -3503,12 +3507,6 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
-}
-
-#edsight-learn-button{
-  background-color:#FFFFFF;
-  border-color: #FFFFFF;
-  color: var(--bs-primary);
 }
 
 .fade {
@@ -5444,6 +5442,32 @@ textarea.form-control-lg {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+#built-designed-for {
+  background-color: var(--main-color);
+  color: #FFF;
+}
+#built-designed-for h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#built-designed-for p {
+  font-weight: 400;
+  font-size: 24px;
+}
+.builtDesignedDesc {
+  padding-right: 25px;
+}
+.builtDesignedRole {
+  background-color: #FFBA5B;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.builtDesignedRolePara {
+  margin-bottom: 0;
+}
+
+
 .toast {
   width: 350px;
   max-width: 100%;
@@ -5492,23 +5516,6 @@ textarea.form-control-lg {
 .toast-body {
   padding: 0.75rem;
   word-wrap: break-word;
-}
-
-#submitButton {
-  color: var(--fifth-color);
-  background-color: #FFF;
-  border: none;
-}
-#submitButton:hover {
-  color: #FFF;
-  background-color: var(--fifth-color);
-  border: none;
-}
-
-#submitButton:active {
-  color: #FFF;
-  background-color: var(--fifth-color);
-  border: none;
 }
 
 .modal {
@@ -7897,6 +7904,10 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-purple {
+  background-color: var(--tertiary-color);
+}
+
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
@@ -8032,15 +8043,16 @@ textarea.form-control-lg {
 }
 #what-edsight-btn
 {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
   line-height: 1.5rem;
-
-  background-color: var(--tertiary-color);
   color: var(--bs-white);
+  border-color: #f8f9fa;
 }
+#what-edsight-btn:hover {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
+
+
 .what-edsight-desc:first-of-type {
   margin-bottom: 33px !important;
 }
@@ -11381,8 +11393,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background-color: var(--fifth-color);
-  background-image: linear-gradient(to right, var(--fourth-color) , var(--fifth-color));
+  background-color: var(--secondary-color);
 }
 
 .font-alt {
@@ -11390,7 +11401,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background: var(--main-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11432,7 +11443,7 @@ section {
   color: #FFFFFF;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #6c757d;
+  color: #2D4B66;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #2937f0;
@@ -11632,6 +11643,16 @@ footer a:hover, footer a:active, footer a:focus {
 
 .masthead {
   background-color: #FF6E86;
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
+.masthead-teacher{
+  background-color: var(--secondary-color);
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
+.masthead-facil{
+  background-color: var(--tertiary-color);
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
