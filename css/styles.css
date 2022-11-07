@@ -65,6 +65,8 @@
   --main-color: #FF6E86;
   --secondary-color: #FFBA5B;
   --tertiary-color: #604E6E;
+  --fourth-color: #A46E9C;
+  --fifth-color: #8799EC;
   --main-font: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -2207,6 +2209,7 @@ progress {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -5490,6 +5493,23 @@ textarea.form-control-lg {
 .toast-body {
   padding: 0.75rem;
   word-wrap: break-word;
+}
+
+#submitButton {
+  color: var(--fifth-color);
+  background-color: #FFF;
+  border: none;
+}
+#submitButton:hover {
+  color: #FFF;
+  background-color: var(--fifth-color);
+  border: none;
+}
+
+#submitButton:active {
+  color: #FFF;
+  background-color: var(--fifth-color);
+  border: none;
 }
 
 .modal {
@@ -11366,7 +11386,8 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--fifth-color);
+  background-image: linear-gradient(to right, var(--fourth-color) , var(--fifth-color));
 }
 
 .font-alt {
