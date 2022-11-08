@@ -8070,6 +8070,10 @@ textarea.form-control-lg {
   color: var(--secondary-color);
   background-color: #FFFFFF;
 }
+#what-edsight-btn:hover, #what-edsight-btn:active {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
 
 .what-edsight-desc:first-of-type {
   margin-bottom: 33px !important;
