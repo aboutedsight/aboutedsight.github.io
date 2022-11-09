@@ -65,6 +65,8 @@
   --main-color: #FF6E86;
   --secondary-color: #FFBA5B;
   --tertiary-color: #604E6E;
+  --fourth-color: #A46E9C;
+  --fifth-color: #8799EC;
   --main-font: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -5518,6 +5520,23 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
+#submitButton {
+  color: var(--fifth-color);
+  background-color: #FFF;
+  border: none;
+}
+#submitButton:hover {
+  color: #FFF;
+  background-color: var(--fifth-color);
+  border: none;
+}
+
+#submitButton:active {
+  color: #FFF;
+  background-color: var(--fifth-color);
+  border: none;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -8051,7 +8070,10 @@ textarea.form-control-lg {
   color: var(--secondary-color);
   background-color: #FFFFFF;
 }
-
+#what-edsight-btn:hover, #what-edsight-btn:active {
+  color: var(--secondary-color);
+  background-color: #FFFFFF;
+}
 
 .what-edsight-desc:first-of-type {
   margin-bottom: 33px !important;
@@ -11393,7 +11415,9 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--fifth-color);
+  background-image: linear-gradient(to right, var(--fourth-color) , var(--fifth-color));
+
 }
 
 .font-alt {
