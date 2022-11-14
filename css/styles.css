@@ -11597,6 +11597,12 @@ section.cta:before {
   max-width: 10rem;
 }
 
+.feature-name-pic{
+  display: flex;
+  justify-content: space-evenly !important;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 576px) {
   .features-device-mockup .circle {
     width: 70%;
