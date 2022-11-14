@@ -645,6 +645,18 @@ progress {
   margin-left: auto;
 }
 
+.teachers-info-box {
+  margin-bottom: 30px;
+}
+
+.teachers-info-box {
+  text-align: center;
+}
+
+.teachers-info-box img {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -658,6 +670,13 @@ progress {
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+  }
+  .teachers-info-box {
+    margin-bottom: 70px;
+    text-align: left;
+  }
+  .teachers-info-box img {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
