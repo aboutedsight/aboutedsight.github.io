@@ -11597,9 +11597,19 @@ section.cta:before {
   max-width: 10rem;
 }
 
+/* .new-color-text{
+  color: var(--tertiary-color) !important;
+} */
+
 .feature-name-pic{
   display: flex;
   justify-content: space-evenly !important;
+  flex-wrap: wrap;
+}
+
+.feature-steps{
+  display: flex;
+  justify-content: space-around !important;
   flex-wrap: wrap;
 }
 
@@ -11729,6 +11739,7 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead .masthead-device-mockup .device-wrapper {
   max-width: 10rem;
 }
+
 @media (min-width: 576px) {
   .masthead .masthead-device-mockup .circle {
     width: 70%;
