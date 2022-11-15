@@ -4128,6 +4128,15 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.nav-menu-btn {
+  color: #FFF !important;
+  border-color: #FFF !important;
+}
+
+.navMobile {
+  text-align: c;
+}
+
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -11798,6 +11807,9 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
+  }
+  #mainNav {
+    box-shadow: none !important;
   }
 }
 @media (min-width: 1200px) {
