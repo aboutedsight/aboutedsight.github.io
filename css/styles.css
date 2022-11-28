@@ -616,6 +616,11 @@ progress {
   max-width: 100%;
   height: auto;
 }
+@media (min-width = 375){
+  .img-fluid{
+    max-width: 375px;
+  }
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11464,7 +11469,7 @@ html {
 aside,
 section {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .app-badge {
@@ -11736,27 +11741,6 @@ footer a:hover, footer a:active, footer a:focus {
 .hero-image{
   max-width: 100%;
 }
-@media (min-width = 768px){
-  .hero-image{
-    max-width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .hero-image{
-    max-width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-image{
-    max-width: 100%;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-image{
-    max-width: 100%;
-  }
-}
-
 
 .masthead .masthead-device-mockup .circle {
   position: absolute;
