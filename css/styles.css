@@ -616,11 +616,12 @@ progress {
   max-width: 100%;
   height: auto;
 }
-@media (min-width = 375){
+
+/* @media (min-width: 768px){
   .img-fluid{
-    max-width: 375px;
+    min-width: 100%;
   }
-}
+} */
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11828,4 +11829,8 @@ footer a:hover, footer a:active, footer a:focus {
   .what-edsight-desc-img {
     padding-right: 120px;
   }
+
+}
+.test{
+  background-color: var(--bs-orange);
 }
