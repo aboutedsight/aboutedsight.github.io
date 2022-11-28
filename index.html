@@ -23,14 +23,14 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="#page-top">
-                <img id="light-edsight-logo" src="assets/img/edsightdark.png"></img>
+                <img src="assets/img/logo.png"></img>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            <button class="navbar-toggler nav-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
             </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse navMobile" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="index.html" target="_self">HOME</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="teachers.html" target="_self">FOR TEACHERS</a></li>
@@ -44,7 +44,9 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav>  
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">&#8593;</button>  
     <!-- Mashead header-->
     <header class="masthead">
         <div class="container px-5 py-5">
@@ -54,7 +56,7 @@
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
                         <h1 class="display-1 text-white lh-1 mb-3">Introducing Edsight</h1>
                         <p class="lead fw-normal text-white mb-5 me-3">Instructional decisions informed by <br> classroom data, designed for K-12 math educators.</p>
-                        <button type="button" class="btn btn-outline-light px-3" id="edsight-learn-button" data-bs-toggle="modal" data-bs-target="#feedbackModal">GET EARLY ACCESS</button>
+                        <a href="#what-edsight" ><button type="button" class="btn btn-outline-light px-3" id="edsight-learn-button">Learn More &darr;</button></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
