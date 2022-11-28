@@ -4106,6 +4106,9 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+#light-edsight-logo {
+  height: 29px;
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
