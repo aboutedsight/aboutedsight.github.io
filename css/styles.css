@@ -11469,7 +11469,7 @@ html {
 
 aside,
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -11719,18 +11719,18 @@ footer a:hover, footer a:active, footer a:focus {
 
 .masthead {
   background-color: #FF6E86;
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  padding-top: 6em;
+  padding-bottom: 6rem;
 }
 .masthead-teacher{
   background-color: var(--secondary-color);
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .masthead-facil{
   background-color: var(--tertiary-color);
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .masthead .masthead-device-mockup {
   display: flex;
